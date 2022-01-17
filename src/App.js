@@ -37,17 +37,8 @@ const Home = () => {
   let {info, results} = fetchedData
 
   
-  /*
-  console.log("res: " + JSON.stringify(fetchedData))
-  console.log("likes: " + likes)
-  console.log("dislikes: " + dislikes)
-  console.log("characters: " + characters)
-  console.log("characters length: " + characters.length)
-  */
   let api = `https://rickandmortyapi.com/api/character/${characters}?page=${pageNumber}&name=${search}&status=${status}&gender=${gender}`;  
   
-  console.log("api: " + api)
-
   useEffect(() => {
     
     (async function(){
